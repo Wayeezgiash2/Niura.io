@@ -178,6 +178,12 @@ p {
   margin-right: 32px;
 }
 
+.button.hide-on-t-m {
+  filter: none;
+  color: var(--dark-grey);
+  background-image: linear-gradient(308deg, #fbc2eb, #a6c1ee);
+}
+
 .navbar-version-1 {
   z-index: 100;
   flex-direction: row;
@@ -850,6 +856,7 @@ p {
   background-image: linear-gradient(0deg, #fbc2eb, #a6c1ee);
   -webkit-background-clip: text;
   background-clip: text;
+  margin-top: 47px;
   font-family: Poppins, sans-serif;
   font-size: 56px;
   line-height: 64px;
@@ -3845,6 +3852,10 @@ p {
 }
 
 .paragraph {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(0deg, #fbc2eb, #a6c1ee);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 55px;
 }
 
@@ -3913,9 +3924,9 @@ p {
 
 @media screen and (min-width: 1280px) {
   .button.hide-on-t-m {
+    background-color: var(--snow-white);
     filter: none;
     color: var(--dark-grey);
-    background-image: linear-gradient(350deg, #fbc2eb, #a6c1ee);
   }
 
   .text-white.h6-smaller {
@@ -3930,6 +3941,10 @@ p {
 
   .paragraph-m.max-640w {
     font-size: 35px;
+  }
+
+  .heading-2-small {
+    margin-top: 41px;
   }
 
   .profile-bg-colour {
@@ -3998,8 +4013,8 @@ p {
   }
 
   .paragraph {
+    background-color: var(--snow-white);
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(0deg, #fbc2eb, #a6c1ee);
     -webkit-background-clip: text;
     background-clip: text;
     line-height: 70px;
@@ -4470,6 +4485,7 @@ p {
   }
 
   .mobile-section.mobile {
+    background-color: #0a0a0a;
     display: flex;
   }
 
@@ -4538,6 +4554,21 @@ p {
     color: var(--snow-white);
   }
 
+  .screen-2 {
+    background-image: url('../images/Home_1_upscaled-1.jpg');
+    width: 95%;
+    height: 100%;
+    margin-top: -17px;
+  }
+
+  .screen-2._2 {
+    background-image: url('../images/Home_Dashboard_upscaled-1.jpg');
+  }
+
+  .screen-2._3 {
+    background-image: url('../images/Analytics_upscaled-1.jpg');
+  }
+
   .small-title-4 {
     color: var(--snow-white);
     font-family: Poppins, sans-serif;
@@ -4546,6 +4577,11 @@ p {
   .h2-4 {
     color: var(--snow-white);
     text-transform: capitalize;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(0deg, #fbc2eb, #a6c1ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4em;
     line-height: 1.2;
   }
 
@@ -5123,6 +5159,7 @@ p {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
   }
 
   .hero-content-wrapper.left {
